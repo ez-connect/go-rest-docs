@@ -1,3 +1,5 @@
+const simplePlantUML = require('@akebifiky/remark-simple-plantuml');
+
 module.exports = {
   title: 'go-rest',
   tagline: 'Document',
@@ -88,6 +90,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
+            remarkPlugins: [simplePlantUML],
         },
         blog: {
           showReadingTime: true,

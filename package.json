@@ -7,8 +7,9 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve"
+    "serve": "docusaurus serve",
+    "mv": "node ./scripts/mv.js",
+    "deploy": "yarn build && yarn mv && yarn openapi && surge ./build --domain https://xxx.freemind.vn"
   },
   "dependencies": {
     "@akebifiky/remark-simple-plantuml": "^1.0.1",
